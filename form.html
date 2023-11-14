@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td>
+                    <label>First Name</label>
+                </td>
+
+                <td>
+                    <input required="true" placeholder="Enter your last name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Last Name</label>
+                </td>
+
+                <td>
+                    <input required="true" placeholder="Enter your last name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date Of Birth</label>
+                <td><input type="date"></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email</label>
+                </td>
+                <td>
+                    <input type="email" required="true" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" required="true" placeholder="Enter your password" pattern="[A-Za-z]{16}">
+
+                </td>
+            </tr>
+            <tr>
+
+                <td rowspan="4" valign="top">
+                    <span>Skills</span>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="skills" value="HTML" checked="true">
+                        HTML
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" name="skills" value="CSS">
+                        CSS
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" name="skills" value="JS">
+                        JS
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" name="skills" value="REACT">
+                        REACT
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <span>Tech Plan</span>
+                </td>
+
+                <td>
+                    <input type="radio" name="tech" id="FE">
+                    <label for="FE" name="FE">Front End</label>
+                    <br>
+                    <input type="radio" name="tech" id="BE">
+                    <label for="BE" name="BE">Back End</label>
+                    <br>
+                    <input type="radio" name="tech" id="FULL">
+                    <label for="FULL" name="FULL">Full Stack</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+
+                        Profile Pic</label>
+
+                </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

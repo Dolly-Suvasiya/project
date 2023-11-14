@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | HTML Practice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #input-username {
+            width: 100%;
+            padding: 8px;
+        }
+
+        #para-username {
+            border: 2px solid #1e1e1e;
+            min-height: 300px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input-username" placeholder="Enter input here" />
+    <input type="text" id="att" placeholder="Enter input here" />
+
+
+    <p id="para-username">Replace content here</p>
+
+    <script type="text/javascript">
+        const input = document.getElementById('input-username')
+        const para = document.getElementById('para-username')
+        const att = document.getElementById("att")
+
+        // console.log({ input, para })
+        input.addEventListener('keypress', function (event) {
+            const typedValue = event.target.value + event.key
+            console.log("key", event.key)
+            // console.log('value', event.target.value)
+            // console.log("typedvalue", typedValue)
+            console.log(att.value)
+            para.style.width = typedValue
+            para.style[att.value] = typedValue
+
+
+        })
+
+        // // 
+        // function addEventListener(eventName, callbackFunction) {
+
+        //     // event
+        //     callbackFunction(event);
+        // }
+
+    </script>
+</body>
+
+</html>

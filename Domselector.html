@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selectors</title>
+    <style>
+        img{
+            width: 250px;
+        }
+        .para{
+            background-color: aquamarine;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="">
+         <input type="text" placeholder="fname" id="name" name="fname">
+        <br>
+        <input type="password" placeholder="pass" id="password" name="password">
+        <br>
+        <button id="button">Click here</button>
+    </form> -->
+    <input type="text" placeholder="fname" id="name">
+    <input type="email" placeholder="fname2" id="name2">
+    <br>
+    <p  class="para"> Hello World</p>
+<img src="./Sunflower_from_Silesia2.jpg" alt="">
+</body>
+<script>
+    // const name=document.getElementById("name");
+    // const pass=document.getElementById("password");
+    // const btn=document.getElementById("button");
+    // console.log(name.parentNode);
+    // console.log({name});
+let val1=document.getElementsByTagName("input");
+console.log(val1);
+console.log(val1[1].value);
+val1[1].value = 'hello'
+console.log(val1[1].value);
+let val2=document.querySelector("img");
+
+
+
+
+</script>
+</html>

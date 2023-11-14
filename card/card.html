@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            min-height: 80vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            width: 33%;
+         box-shadow: -1px -3px 5px 10px #43b3ae; 
+            /* border-radius: 10px; */
+           
+            border-radius: 10px;
+
+        }
+
+        img {
+            width: 100%;
+            margin: 5px 0px;
+        }
+
+        h2,
+        p,
+        .card-bottom,
+        button,
+        button a {
+            text-align: center;
+            background-color: #43b3ae;
+            color: whitesmoke;
+            font-weight: bold;
+            height: 25px;
+            border: none;
+
+        }
+
+        .text {
+
+            text-align: center;
+        }
+
+        .card-bottom {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2px;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <h2>CAR</h2>
+                <div class="image-wrapper">
+                    <img src="./alloy-asphalt-auto-241316.jpg" alt="">
+                </div>
+                <p class="text">Description</p>
+                <div class="card-bottom">
+                    <span>CarName</span>
+                    <button><a href="#">Click Me</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

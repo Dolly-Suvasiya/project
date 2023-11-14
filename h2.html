@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one h1:nth-child(3) {
+            color: blue;
+        }
+
+        .one h1:nth-child(2) {
+            color: rgb(255, 0, 0);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="one">
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+    </div>
+    <div class="two">
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+        <h1>Lorem ipsum dolor sit, </h1>
+    </div>
+<input type="password" id="pass"></input>
+
+<button type="button" id="btn" onclick="handleclick()"> click here</button>
+<p id="date">current data</p>
+<button type="button" onclick="displaydate()">get date</button>
+
+</body>
+<script>
+    function handleclick() {
+        // alert("hello");
+        const ab = document.getElementById('pass')
+
+        if (ab.type === 'password') {
+            ab.type = 'text'
+        } else {
+            ab.type = 'password'
+        }
+        console.log({ ab })
+    }
+    // handleclick();
+    // [].map(function (object, index, arr) { })
+    // const abc = document.getElementById("btn")
+    // abc.addEventListener("click", handleclick)
+
+
+    function displaydate() {
+        let date = new Date
+        let p = document.getElementById("date")
+
+        p.innerHTML = date
+        return
+
+    }
+</script>
+
+</html> 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle {
+            width: 300px;
+            height: 300px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: rgb(255, 186, 186);
+        }
+
+        #innerCircle {
+            width: 0px;
+            height: 0px;
+            border-top: 210px solid #416FA6;
+            border-left: 210px solid #B45447;
+            border-right: 210px solid #718242;
+            border-bottom: 210px solid #FFA500;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            margin-left: 15px;
+            margin-right: 0px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+            /* border-radius: 50%;
+    background-color: green; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="circle"></div>
+</body>
+
+</html>

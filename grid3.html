@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Challenge3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main {
+            display: flex;
+            width: 80%;
+            margin: 120px;
+            padding: 30px;
+
+        }
+
+        .circle {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+
+        .div-A {
+            background-color: blueviolet;
+            color: white;
+            border: 2px solid black;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .div-B {
+            background-color: grey;
+            color: white;
+            border: 2px solid;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .div-C {
+            background-color: whitesmoke;
+            color: black;
+            border: 2px solid;
+            margin-right: 20px;
+
+        }
+
+        .div-D {
+            color: white;
+            background-color: black;
+            border: 2px solid;
+            border-radius: 5px;
+
+        }
+
+        .div-D .circle {
+            background-color: white;
+            padding-right: 10px;
+        }
+
+        .div-A,
+        .div-B,
+        .div-C,
+        .div-D {
+            margin-right: 20px;
+            border-radius: 8px;
+
+        }
+
+        .div-A,
+        .div-B,
+        .div-C,
+        .div-D,
+        .right-div {
+            /* padding-left: 20px;
+            padding-top: 15px;
+            padding-right: 10px; */
+            padding: 25px;
+
+        }
+
+        /* .div-A .profile,.div-B,.div-C,.div-D,.right-div .profile{
+    padding-bottom: 15px;
+} */
+        .profile {
+            padding-bottom: 15px;
+        }
+
+        .right-div {
+            justify-content: flex-end;
+            border: 2px solid;
+            border-radius: 5px;
+            width: 25%;
+        }
+
+        .left-div {
+            width: 75%;
+        }
+
+        .div-A,
+        .div-D {
+            width: 70%;
+        }
+
+        .div-B,
+        .div-C,
+        .right-div {
+            width: 30%;
+        }
+
+        .top-left,
+        .profile,
+        .bottom-left {
+            display: flex;
+
+        }
+
+        .div-A-para,
+        .div-B-para,
+        .div-C-para,
+        .div-D-para,
+        .right-para {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 28px;
+
+        }
+
+        .div-A-para2,
+        .div-B-para2,
+        .div-C-para2,
+        .div-D-para2,
+        .right-para2 {
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left-div">
+            <div class="top-left">
+                <div class="div-A">
+                    <div class="profile">
+                        <div class="circle"></div>
+
+                        <div>
+                            <h4>Dolly Suvasiya </h4>
+                            <span>Lorem ipsum </span>
+                        </div>
+                    </div>
+                    <div class="div-A-para">
+                        <p>
+                            I received a job after mid-course, and the subjects I learned
+                            were current,if not more so,in the company I joined.I
+                            honestly feel Igot every penny;s worth.
+                        </p>
+                    </div>
+                    <div class="div-A-para2">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Corporis magnam nostrum dolorem magni accusantium sit inventore
+                            cupiditate itaque ratione eos necessitatibus ea. Autem delectus
+                            obcaecati dicta eveniet facilis recusandae commodi.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="div-B">
+                    <div class="profile">
+                        <div class="circle"></div>
+                        <div>
+                            <h4>Dolly Suvasiya </h4>
+                            <span>Lorem ipsum </span>
+                        </div>
+                    </div>
+                    <div class="div-B-para">
+                        <P>The team was very
+                            supportive and kept me
+                            motivated.
+
+                        </P>
+                    </div>
+                    <div class="div-B-para2">
+                        <p>Lorem ipsum dolor sit amet
+                            ea iusto impedit provident nesciun.
+                            Reprehenderit natus enim
+                            asperiores amet quo ipsam? Atque
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-left">
+                <div class="div-C">
+                    <div class="profile">
+                        <div class="circle"></div>
+                        <div>
+                            <h4>Dolly Suvasiya </h4>
+                            <span>Lorem ipsum </span>
+                        </div>
+                    </div>
+                    <div class="div-C-para">
+                        <p>
+                            An overall wonderful
+                            and rewarding
+                            experience.
+                        </p>
+                    </div>
+                    <div class="div-C-para2">
+                        <p>
+                            " Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Dolore perferendis in, praes
+                            entium impedit rem magni eos."
+                        </p>
+                    </div>
+                </div>
+                <div class="div-D">
+                    <div class="profile">
+                        <div class="circle"></div>
+                        <div>
+                            <h4>Dolly Suvasiya </h4>
+                            <span>Lorem ipsum </span>
+                        </div>
+                    </div>
+                    <div class="div-D-para">
+                        <p>
+                            Aewsome teaching support from TAs who did the bootcamp
+                            themselves.Getting guidance from them and learnong forum
+                            their experience was easy.
+                        </p>
+                    </div>
+                    <div class="div-D-para2">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla </br>
+                            eligendi cupiditate earum officia illum incidunt, doloribus</br>
+                            tempore! Quae quisquam optio laudantium debitis, perferendis </br>
+                            deserunt ad nam minima. Ipsam, alias quasi.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-div">
+            <div class="profile">
+                <div class="circle"></div>
+                <div>
+                    <h4>Dolly Suvasiya </h4>
+                    <span>Lorem ipsum </span>
+                </div>
+            </div>
+            <div class="right-para">
+                <p>
+                    Such a life-changing
+                    experience.Highly
+                    recommended!
+                </p>
+            </div>
+            <div class="right-para2">
+                <p>
+                    Lorem ipsum dolor,
+                    sit amet consectetur
+                    adipisicing elit. Eveniet,
+                    repellat ea! Aperiam
+                    reiciendis eligendi cum 
+                    quos ad ducimus perferendis,
+                    amet nemo debitis impedit
+                    consectetur tempore id
+                    repellendus quibusdam simili
+                    que doloremque. Lorem ipsum
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

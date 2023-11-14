@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form practice</title>
+<style>
+    .main{
+        position: absolute;
+        top: 0%;
+        left: 70%;
+    }
+    body{
+        background-color:#f0f;
+    }
+    .d1{
+        color: red;
+    }
+    input{
+        border-radius: 10px;
+        margin: 10px;
+        height:20px;
+    }
+button{
+    border-radius: 10px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+    <h2>Welcome Back</h2>
+    <span>Create your account</span>
+    <br>
+    <span>It's totally free.</span>
+    <br>
+    <button>Sign up</button>
+    <div class="main">
+    <form action="">
+            <h3>Login</h3>
+            <label>Username or email address<span class="d1">*</span></label>
+            <br>
+            <input type="text" name="username or email" placeholder="username or email" required>
+            <br>
+            <label >Password<span class="d1">*</span></label>
+            <br>
+            <input type="password" name="password" placeholder="password" pattern="[A-Za-z]{16}"required >
+            <br>
+            <input type="submit" name="Sign up" value="Sign up">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input-name">
+    <p id="para-content">Replace contnent here</p>
+</body>
+<script>
+    const input = document.getElementById("input-name");
+    const para = document.getElementById("para-co");
+
+    input.addEventListener('keypress', function (event) {
+        const typedValue = event.target.value + event.key
+        para.innerHTML = typedValue
+
+    })
+</script>
+
+</html>

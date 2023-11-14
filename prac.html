@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .h-8 {
+            width: 97%;
+            height: 8%;
+        }
+
+        .h-50 {
+            width: 97%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .br {
+            border: 2px black solid;
+
+        }
+
+        body {
+
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .w-30 {
+            width: 32%;
+            height: 100%;
+        }
+
+        .h-25 {
+            height: 25%;
+        }
+
+        .h-72 {
+            height: 72%;
+        }
+
+        .display {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<body class="br">
+    <div class="h-8 br center ">HEADER</div>
+    <div class="h-8 br center">PATH</div>
+    <div class="h-8 br center">INFO</div>
+    <div class="h-50">
+        <div class="w-30 br center"> LINK</div>
+        <div class="w-30 display ">
+            <div class="h-25 br center">WORKS</div>
+            <div class="h-72 br center">PROJECTS</div>
+        </div>
+        <div class="w-30 br center">SKILL</div>
+    </div>
+    <div class="h-8 br center">CONTACT</div>
+    <div class="h-8 br center">FOOTER</div>
+</body>
+
+</html>

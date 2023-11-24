@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center{
+            text-align: center;
+        }
+        /* .bg-red
+        {
+            background-color: red;
+        } */
+        .mx-auto{
+           margin: auto; 
+        }
+        /* .mw{
+            max-width: 20vw;
+        } */
+        .button{
+            padding: 20px;
+            margin: 0px 5px;
+            border: 2px solid black;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .items-center{
+            align-items: center;
+        }
+        .row{
+            margin: 8px 0px;
+        }
+        .row input{
+            margin: 0;
+border-radius: 4px;
+border: 2px dotted black;
+            padding: 10px 0px;
+            font-size: 20px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 class="center">Calculator using HTML CSS & JS</h1>
+   
+    <div class="container flex bg-red  items-center mx-auto mw">
+        <div class="row">
+            <input class="input" type="text">
+        </div>
+        <div class="row">
+            <button class="button">C</button>
+            <button class="button">%</button>
+            <button class="button">M+</button>
+            <button class="button">M</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
+
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">/</button>
+        </div>
+
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
+
+        <div class="row">
+            <button class="button">0</button>
+            <button class="button">-</button>
+            <button class="button">=</button>
+            <button class="button">.</button>
+        </div>
+    </div>
+</body>
+<script>
+let string="";
+let buttons=document.querySelectorAll(".button");
+Array.from(buttons).forEach((button)=>{
+    button.addEventListener("click",(e)=>{
+        if(e.target.innerHTML=='='){
+            string=eval(string);
+            document.querySelector("input").value=string;
+
+        }
+     else if(e.target.innerHTML=='C'){
+            string="";
+            document.querySelector("input").value=string;
+
+        }
+        else{
+        console.log(e.target)
+        string=string + e.target.innerHTML;
+        document.querySelector("input").value=string;
+        }
+    })
+
+})
+
+</script>
+</html>

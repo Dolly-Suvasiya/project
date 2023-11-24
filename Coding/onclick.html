@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .container{
+            display: flex;
+        }
+     
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+      /* margin: 200px 0 0 125px; */
+      margin: 10px;
+    
+
+        }
+        #box1{
+            background-color: red;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        #box2{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div  id="box" ondblclick="hover()"></div>
+    <div id="box1" oncontextmenu="hover()"></div>
+    <div id="box2" onmouseover="hover()"></div>
+
+    </div>
+    <p id="demo">To display date click on below button</p>
+    <button id="btn" onclick="displaydate()">Click Me</button>
+</body>
+<script>
+function displaydate(){
+    let time=new Date()          
+    document.getElementById('btn').innerHTML=time;
+    console.log("button is clicked")
+    // time.addEventListener('click',displaydate);
+    
+    //     // const date=Date.now();
+    //   
+}
+// function time() {
+//   document.getElementById("datebtn").innetHTML = getDate();
+// }
+// <p id="datebtn">time is =</p>
+
+// <button type="button" onclick="time()">click to show the time</button>
+
+
+    function  hover(){
+        alert("event activated");
+    }
+</script>    
+
+
+
+</html>

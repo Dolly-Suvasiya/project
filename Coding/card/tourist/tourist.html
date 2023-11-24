@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touristt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .container {
+            /* width: 80vh; */
+            display: flex;
+            width: 80%;
+            height: 80vh;
+        }
+
+        /* .content{
+            width: 30%;
+            border: 1px solid red;
+        } */
+        .content {
+            margin-left: 20px;
+        }
+
+        .content h2 {
+            font-size: 4rem;
+        }
+
+        .content span {
+            font-size: 2rem;
+        }
+
+        #red {
+            color: red;
+
+        }
+
+        .para,
+        .para2 {
+            padding-bottom: 15px;
+        }
+
+        .para2 {
+            opacity: 0.5;
+        }
+
+        button {
+            background-color: aqua;
+            height: 30px;
+            width: 25%;
+            border-radius: 10px;
+            color: white;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .wrapper {
+            width: 60%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-left: -290px;
+
+        }
+
+        .image-wrapper {
+            background-size: cover;
+    background-repeat: no-repeat;
+            background-position: center center;
+            border: 2px solid red;
+            height: 170px;
+            width: 175px;
+        }
+
+        .image-wrapper img {
+            width: 350px;
+            height: 300px;
+        }
+
+        .image-wrapper-1 {
+            background-image: url("download.jpeg");
+            top: 50%;
+
+            margin-top: 310px;
+
+        }
+
+        .image-wrapper-2 {
+            background-image: url('./images.jpeg');
+            margin-top: 200px;
+            margin-bottom: 15px;
+
+        }
+
+        .image-wrapper-3 {
+            background-image: url('./images\ \(1\).jpeg');
+            /* margin-bottom:50px; */
+
+        }
+
+        .image-wrapper-4 {
+            background-image: url('./images\ \(2\).jpeg');
+            margin-top: 75px;
+            margin-bottom: 15px;
+
+
+        }
+
+        .image-wrapper-5 {
+            background-image: url('./images\ \(1\).jpeg');
+        }
+
+        .image-wrapper-6 {
+            background-image: url('./download.jpeg');
+            margin-top: 130px;
+        }
+
+        @media screen  and (max-width:768px) {
+
+        
+            .container {
+                flex-direction: column;
+        
+            }
+            .content h2{
+                font-size: 2rem;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* align-items: center; */
+                width: 100%;
+            }
+            .image-wrapper{
+                height: 170px;
+                width:80%;
+            }
+
+            .image-wrapper img {
+                width: 100%;
+            }
+              .image-wrapper-1{
+                margin-top: 20px;
+              }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+
+            <div class="content-wrapper">
+                <div class="content">
+                    <h2>Discover the perfect</h2>
+                    <span>destinations in <b id="red">India</b></span>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero.Lorem ipsum dolor sit<br> amet
+                        consectetur adipisicing elit. Vero.
+
+                    </p>
+                    <p class="para2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi accusantium unde <br>
+                        adipisci ipsum aspernatur?<br>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button> Enquire Now</button>
+                </div>
+            </div>
+            <div>
+                <div class="wrapper">
+                    <!-- column 1 which has single image -->
+                    <div class="column">
+                        <div class="image-wrapper image-wrapper-1">
+                            <!-- <img src="./download.jpeg" alt=""> -->
+                        </div>
+                    </div>
+
+                    <!-- column 2 which has single image -->
+                    <div class="column">
+                        <div class="image-wrapper image-wrapper-2">
+                        </div>
+                        <div class="image-wrapper image-wrapper-3">
+                        </div>
+                    </div>
+
+                    <!-- column 3 which has single image -->
+                    <div class="column">
+                        <div class="image-wrapper image-wrapper-4">
+                        </div>
+                        <div class="image-wrapper image-wrapper-5">
+                        </div>
+                    </div>
+
+                    <!-- column 4 which has single image -->
+                    <div class="column">
+                        <div class="image-wrapper image-wrapper-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock {
+  font-size: 48px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+    <div>
+      <label for="alarm-time">Set Alarm:</label>
+      <input type="time" id="alarm-time">
+      <button id="set-alarm">Set</button>
+      <button id="stop-alarm">Stop</button>
+    </div>
+</body>
+<script>
+    let clock = document.getElementById("clock");
+let alarmTime = document.getElementById("alarm-time");
+let alarmButton = document.getElementById("set-alarm");
+let stopAlarm = document.getElementById("stop-alarm");
+let alarmInterval;
+
+// Function to update the clock every second
+function updateTime() {
+  let date = new Date();
+  let time = date.toLocaleTimeString();
+  clock.innerText = time;
+}
+// Set interval to update the clock every second
+setInterval(updateTime, 1000);
+
+// Function to set the alarm
+alarmButton.addEventListener("click", function() {
+  let alarm = new Date("January 01, 2000 " + alarmTime.value);
+  let currentTime = new Date();
+  let timeUntilAlarm = alarm.getTime() - currentTime.getTime();
+
+  alarmInterval = setTimeout(function() {
+    console.log("Time's up!");
+  }, timeUntilAlarm);
+});
+
+// Function to stop the alarm
+stopAlarm.addEventListener("click", function() {
+  clearTimeout(alarmInterval);
+});
+
+</script>
+</html>

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+body {
+    background: url(./nill.jpg);
+}
+
+header {
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    padding: 25px;
+    /* margin-left: 25px; */
+    /* right: 20px; */
+
+    display: flex;
+    align-items: stretch;
+}
+
+.space {
+    display: flex;
+    flex: 1 0 40%;
+
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.side-text {
+    position: absolute;
+    top: calc(40% + 200px);
+    left: 1%;
+    z-index: 999;
+    /* background: gray; */
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    transform-origin: 0 0;
+}
+
+hr {
+    width: 100px;
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    /* display: flex;
+    justify-content: center; */
+    /* height: 100vh; */
+    margin-left: 10%;
+}
+
+.content p {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content span {
+    font-size: 2.5rem;
+    font-weight: 500;
+  
+
+}
+.content h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.social-handles{
+    opacity: 0.5;
+}
+.right-side-text {
+    position: absolute;
+    top: 30%;
+    /* width: 10px; */
+    font-weight: bold;
+    right: 1%;
+    padding: 20px;
+    color: black;
+    background-color: black;
+
+}
+
+.right-side-text hr {
+    width: 10px;
+    /* height: 10px; */
+    padding: 15px;
+    color: black;
+    z-index: 1;
+    border-left: none;
+    border-right: none;
+    transition: width 5s ease-in-out;
+
+}
+.right-side-text hr:hover{
+   width: 50px;
+   background-color: blue;
+}

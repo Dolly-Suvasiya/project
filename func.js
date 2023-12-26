@@ -26,9 +26,7 @@
 //     let odd = [];
 //     for (let i of p) {
 //         if (i % 2 == 0) {
-
 //             even.push(i)
-
 //         }
 
 //         else {
@@ -42,12 +40,40 @@
 // console.log(num(arr))
 
 
-function datatype(p1, p2, p3, p4) {
-    return [{ value: p1, type: typeof (p1) },
-    { value: p2, type: typeof (p2) },
-    { value: p3, type: typeof (p3) },
-    { value: p4, type: typeof (p4) }
-    ]
+// function datatype(p1, p2, p3, p4) {
+//     return [{ value: p1, type: typeof (p1) },
+//     { value: p2, type: typeof (p2) },
+//     { value: p3, type: typeof (p3) },
+//     { value: p4, type: typeof (p4) }
+//     ]
 
+// }
+// console.log(datatype(10.2, [], "Dolly", false))
+
+
+let list = [3, 9, 7, 6, 2, 8, 4, 1, 11, 13];
+
+function check(p) {
+    let even = [];
+    let odd = [];
+    for (let i of p) {
+        if (i % 2 == 0) {
+            even.push(i);
+
+        }
+        else {
+            odd.push(i);
+
+        }
+
+    }
+    return { even, odd }
 }
-console.log(datatype(10.2,[],"Dolly",false))
+console.log(check(list));
+// console.log("a", a);
+// console.log("odd", odd);
+
+
+
+
+

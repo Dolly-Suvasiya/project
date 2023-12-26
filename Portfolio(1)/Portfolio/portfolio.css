@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(./nill.jpg);
+}
+
+header {
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    padding: 25px;
+    /* margin-left: 25px; */
+    /* right: 20px; */
+    display: flex;
+    align-items: stretch;
+}
+
+.space {
+    display: flex;
+    flex: 1 0 40%;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.side-text {
+    position: absolute;
+    top: calc(47% + 100px);
+    left: 1%;
+    z-index: 999;
+    /* background: gray; */
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    transform-origin: 0 0;
+    justify-content: space-around;
+}
+
+hr {
+    width: 50px;
+    background-color: #000;
+}
+
+.spacehr {
+    margin-right: 31px;
+    margin-left: 31px
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    /* display: flex;
+    justify-content: center; */
+    /* height: 100vh; */
+    margin-left: 10%;
+}
+
+.content p {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content span {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.content h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.social-handles {
+    opacity: 0.5;
+}
+
+.right-side-text {
+    /* position: absolute; */
+    position: fixed;
+    top: 30%;
+    /* width: 10px; */
+    font-weight: bold;
+    right: 1%;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right-side-text a {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 15px;
+}
+
+.right-side-text hr {
+    /* position: fixed; */
+    width: 25px;
+    margin: 0;
+    border-color: black;
+    z-index: 1;
+    border-left: none;
+    border-right: none;
+    transition: width 5s ease-in-out;
+
+}
+
+.right-side-text a span {
+    opacity: 0;
+    color: #000;
+    margin-right: 10px;
+    /* : none; */
+}
+
+.right-side-text a:hover span {
+    /* display: block; */
+    opacity: 1;
+}
+
+.typed {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.right-side-text hr:hover {
+    width: 50px;
+    background-color: black;
+}
+
+/* about css */
+.about-wrapper {
+    position: relative;
+}
+
+.about-header {
+    padding-top: 20px;
+    /* position: absolute; */
+}
+
+.about-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: baseline;
+}
+
+.about-header h1 {
+    text-align: center;
+
+}
+
+.about-content {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 40%;
+    /* border: 2px solid #0b7193; */
+    line-height: 25px;
+    font-size: 18px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.skills-container {
+    width: 40%;
+    /* border: 2px solid #0b7193; */
+    padding: 20px;
+    border-radius: 8px;
+    /* width: 300px; */
+    text-align: center;
+}
+
+.skills-container h2 {
+    padding-bottom: 5px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #0b7193;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container {
+        width: 80%;
+    }
+}
+
+.skill .skill-progress {
+    animation: fillProgress 5s ease-in-out 0.5s;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* education css */
+.strip-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.strip {
+    height: 9px;
+    width: 80%;
+    border-radius: 5px;
+    /* border: 2px solid #000; */
+    background-color: #0b7193;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    border: 2px solid;
+}

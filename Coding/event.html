@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    
+    <button onclick="printMessage('Clicked on button')">Click Me</button>
+    <p onclick="printMessage('Clicked on para')">Para Click Me</p>
+
+
+    <input type="text" value="TEMP" id="test" onfocus="handleFocus(event)" onblur="handleBlur(event)" onchange="handleInputChange(event)" />
+    <button id="buttonId">Toggle</button>
+
+    <script>
+        const target = document.getElementById('buttonId')
+        target.addEventListener('click', changeFieldType); // callback
+
+        const inputTarget = document.getElementById('test');
+        console.log({inputTarget})
+        inputTarget.addEventListener('keypress', handleKeyPress)
+
+        
+        function printMessage(msg) {
+            console.log(msg);
+        }
+
+
+        function changeFieldType(e) {
+            const element = document.getElementById('test')
+            // console.log(element.type, e)
+            if (element.type === 'password') {
+                element.type = 'text'
+            } else {
+                element.type = 'password'
+            }
+            target.removeEventListener('click', changeFieldType);
+        }
+
+        function handleInputChange(e) {
+            console.log("change called", e.target.value);
+        }
+
+        function handleFocus(e) {
+            console.log("Focus called", e);
+        }
+
+        function handleBlur(e) {
+            console.log("Blur called", e);
+        }
+
+        function handleKeyPress(e) {
+            console.log("Key Press called", e);
+
+        }
+    </script>
+</body>
+</html>

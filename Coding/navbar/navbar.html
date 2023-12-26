@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            background-image: url(./tree-736885_1280.jpg);
+            /* background-image: url(./th.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+
+        }
+
+        .bottom {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-transform: uppercase;
+            text-shadow: 9px 13px 4px rgb(220, 20, 100);
+        }
+
+        p {
+            font-weight: bold;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        button {
+            font-size: 15px;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(220, 20, 100);
+            width: 20%;
+
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            min-height: 600px;
+
+        }
+
+        .card1-image {
+            color: rgb(220, 20, 100);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+
+        .card {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            margin: 20px;
+        }
+
+        .card1 h3 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .main {
+            padding-top: 20px;
+        }
+
+        .success-stories-heading {
+            background-color: aliceblue;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .images {
+            width: 33.33%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: red;
+            padding: 10px;
+            position: relative;
+        }
+        .images img {
+            width: 100%;
+            height: 300px;
+        }
+        .images:hover {
+            /* height: 200px; */
+            /* width: 313px; */
+            /* padding: 10px; */
+            /* margin: 10px; */
+            background-color: blue;
+        }
+
+        .images .plus {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            width: 50px;
+            opacity: 0;
+            background-color: orange;
+        }
+
+        .images:hover .plus {
+            opacity: 1;
+        }
+
+        .success-stories-img {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-stories {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .images-list {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 1200px;
+        }
+
+        .location img {
+            width: 900px;
+        }
+
+        .location h3 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .Contact {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .form input,
+        textarea {
+            width: 400px;
+            margin: 10px;
+            padding: 11px;
+            text-align: center;
+
+
+        }
+
+        .details {
+            margin: 50px;
+            padding-bottom: 20px;
+            margin-left: -30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+
+        .footer {
+            height: 80px;
+            background-color: rgb(220, 20, 100);
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        button:hover {
+            background-color: blue;
+            border-radius: 10px;
+            /* transform: translateX( -1px ) rotateY( 360deg ); */
+            transform: perspective(300px) rotatex(-180deg);
+            transition: all 7s linear;
+
+        }
+
+        .card .card1-image:hover {
+            background-color: rgb(220, 20, 100);
+        }
+
+
+
+        @media screen and (max-width:766px) {
+            .success-stories-heading {
+                width: 100%;
+            }
+            .Contact{
+                display: flex;
+               justify-content: center;
+                flex-wrap: wrap;
+                
+            }
+            .images{
+                width: 100%;
+            }
+            .location img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <img src="https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg" alt="">  -->
+            <h2>Moderno</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br>
+            <p>consectetur adipisicing </p>
+            <button><a href="#" target="_blank">Get In Touch</a></button>
+        </div>
+        <div class="main bottom">
+            <div class="card  bottom">
+                <div class="card1">
+                    <img src="icons8-pencil-100.png" class="card1-image" alt="">
+                    <h3>We Are Creative</h3>
+                    <p>
+                        Lorem ipsum dolor, sit eaque elit.</p>
+                    <p>Corporis repellat natus eaque aperiam . </p>
+                    <p> Distinctio porro eius voluptates</p>
+                    </p>
+                </div>
+
+                <div class="card1">
+                    <img src="icons8-pencil-100.png" class="card1-image" alt="">
+                    <h3 class="heading">We Are Creative</h3>
+                    <p>
+                        Lorem ipsum dolor, sit eaque elit.</p>
+                    <p>Corporis repellat natus eaque aperiam . </p>
+                    <p> Distinctio porro eius voluptates</p>
+                    </p>
+                </div>
+
+                <div class="card1">
+                    <img src="icons8-pencil-100.png" class="card1-image" alt="">
+                    <h3>We Are Creative</h3>
+                    <p>
+                        Lorem ipsum dolor, sit eaque elit.</p>
+                    <p>Corporis repellat natus eaque aperiam . </p>
+                    <p> Distinctio porro eius voluptates</p>
+                    </p>
+                </div>
+
+            </div>
+            <div class="success-stories ">
+                <div class="success-stories-heading bottom">
+                    <h3>Success Stories</h3>
+                    <p>We do awesome work,check some work so far </p>
+                </div>
+                <div class="success-stories-img">
+                    <div class="images-list">
+                        <div class="images">
+                            <img  src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                alt="">
+                            <img class="plus" src="icons8-plus-50.png">
+                        </div>
+
+
+                        <div class="images">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.wlllIpqkzcFXXYUbFdqwswHaGE&pid=Api&P=0&h=180">
+                            <!-- <img src="https://tse1.mm.bing.net/th?id=OIP.ttEzcGiQUFE8sBXfZyRvrgHaEj&pid=Api&P=0&h=180"
+                                --> 
+                            <!-- alt="">  -->
+
+                        </div>
+                    </div>
+                    <div class="location bottom">
+                        <h3>Get In Touch </h3>
+                        <p>We are communicative and social</p>
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.equZjZNPtHoq0184nrAJGAHaDi&pid=Api&P=0&h=180"
+                            class="bottom" alt="">
+                    </div>
+                </div>
+
+
+
+                <div class="Contact ">
+                    <div class="form ">
+                        <form action="">
+                            <input type="name" name="Your name" placeholder="Your Name"><br>
+
+                            <input type="email" name="Your mail" placeholder="Your Mail"><br>
+                            <input type="text" name="Subject" placeholder="Subject"><br>
+                            <textarea name="Your Message Here" id="" cols="30" rows="10"
+                                placeholder="Your Message Here"></textarea>
+
+                        </form>
+                    </div>
+                    <div class="details bottoms">
+                        <h3>Our address</h3>
+                        <p>Adarsh Nagar,Shell Colony
+                            <br>Chembur, Mumbai-71
+                        </p>
+                        <h3>Email</h3>
+                        <p>dollysuwasiya86@gmail.com</p>
+                        <h3>Phone Number</h3>
+                        <p>91+8652318775</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Dolly Suvasiya</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

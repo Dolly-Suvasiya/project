@@ -1,0 +1,116 @@
+// practice for creating class
+
+// classname -> Cars
+// properties ->
+//   type: SUV | XUV
+//   model:
+//   company: HONDA | BMW
+//   price: number
+// methods ->
+//   printCarInfo -> expected is to pring complete info of a car
+//   setPrice -> expected is to set price for the car
+//   getPrice -> expected is to return price of the car
+
+// variable `declaration`
+// const today = '14-oct-2023';
+// console.log("today variable", today);
+
+// function `declaration`
+// function printDate() {
+//     console.log(today);
+// }
+// printDate();
+
+// class `declaration`
+class Car {
+    type;
+    model;
+    company;
+    price;
+
+//  constructor(carCompany, carModel, carType, carPrice) {
+    constructor(props) {
+        this.company = props.carCompany;
+        this.model = props.carModel;
+        this.type = props.carType;
+        this.price = props.carPrice;
+    }
+
+    printInfo() {
+        console.log("car type", this.type);
+        console.log("car model", this.model);
+        console.log("car company", this.company);
+        console.log("car price", this.price);
+    }
+
+    setCarType(carType) {
+        this.type = carType;
+    }
+
+    getCarType() {
+        return this.type;
+    }
+
+    setCarModel(carModel) {
+        this.model = carModel;
+    }
+
+    getCarModel() {
+        return this.model;
+    }
+
+    setCarCompany(carCompany) {
+        this.company = carCompany;
+    }
+
+    getCarCompany() {
+        return this.company;
+    }
+
+    setCarPrice(carPrice) {
+        this.price = carPrice;
+    }
+
+    getCarPrice() {
+        return this.price;
+    }
+}
+
+// class instance creation
+// const car1 = new Car("HONDA", "SUV", "Rs. 1,20,000/-");
+// const car1 = new Car({
+//     carPrice: "Rs. 1,20,000/-",
+//     carModel: "Honda City",
+//     carCompany: "HONDA",
+// });
+// car1.printInfo();
+
+// const car2 = new Car("MARUTI SUZUKI", "WagonR", "Hatchback", "Rs. 80,000/-");
+
+// calling to class method using class instance
+// car1.printInfo();
+// console.log("---------")
+// car2.printInfo();
+
+
+class Honda extends Car {
+    constructor(props) {
+        super(props);
+    }
+}
+
+class Suzuki extends Car {
+    constructor(props) {
+        super(props);
+    }
+}
+
+const hondaInstance = new Honda({ carCompany: 'HONDA', carModel: "HONDA CITY", carType: "SUV", carPrice: "Rs. 1,20,000/-" }); //new Car()
+
+hondaInstance.printInfo();
+
+console.log("-------")
+
+const suzukiInstance = new Suzuki({ carCompany: "MARUTI SUZUKI", carModel: "WagonR", carType: "Hatchback", carPrice: "Rs. 80,000/-" });
+
+suzukiInstance.printInfo();

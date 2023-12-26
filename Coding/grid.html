@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid /float/clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: aqua;
+            text-align: center;
+         
+           
+        }
+        .container{
+            padding: 10px;
+        }
+        .col{
+            height: 100px;
+            background-color:bisque;
+            border: 1px solid black;
+
+           
+        }
+        .col-1,.col-5{
+            width: 35%;
+            border: 1px solid black;
+           
+        }
+        .col-2,.col-3,.col-4{
+            width: 10%;
+         
+            border: 1px solid black;
+            
+        }
+        .col-6{
+            width: 35%;
+        }
+        .col-7{
+            height: 150px;
+            width: 15%;
+            border: 1px solid black;
+        }
+        .col-8,.col-9{
+            width: 50%;
+        }
+        .col-10{
+            width: 50%;
+        }
+        .col-11{
+            width: 40%;
+        }
+        .col-12{
+            width: 45%;
+        }
+        .col-13{
+            width: 55%;
+        }
+        .col-14,.col-15{
+            width: 40%;
+        }
+        .col-16,.col-17{
+          width: 50% ; 
+        }
+        .clear{
+            clear: both;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col col-1 left">e</div>
+    <div class="col col-2 left">a</div>
+    <div class="col col-2 left">a</div>
+    <div class="col col-4 left">a</div>
+    <div class="col col-5 left">e</div>
+    <div class="clear"></div>
+<div class="col col-6 left" >Div</div>
+<div class="col col-7 left">Div</div>
+<div class="col col-8 left">Div</div>
+<div class="col col-9 left" >Div</div>
+<div class="clear"></div>
+<div class="col col-10 right">Div</div>
+<div class="col col-11 right">Div</div>
+<div class="col col-12 right">Div</div>
+<div class="col col-13 right">Div</div>
+<div class="clear"></div>
+<div class="col col-14 left">Div</div>
+<div class="col col-15 left">Div</div>
+<div class="col col-16 left">Div</div>
+<div class="col col-17 left">Div</div>
+
+</div>
+</body>
+</html>

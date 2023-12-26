@@ -1,0 +1,371 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid challenge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            padding: 40px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card-sedans {
+            background-color: orange;
+            color: white;
+            width: 30%;
+            height: 100vh;
+            padding-left: 50px;
+        }
+
+        .card-suvs {
+            background-color: cadetblue;
+            color: white;
+            width: 30%;
+            height: 100vh;
+            padding-left: 50px;
+        }
+
+        .card-luxury {
+            background-color: seagreen;
+            color: white;
+            width: 30%;
+            height: 100vh;
+            padding-left: 50px;
+            
+        }
+
+        .logo-wrapper {}
+
+        img {
+            height: 50px;
+            margin-top:
+            40px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 0;
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            font-size: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+        button {
+            height: 30px;
+            border-radius: 10px;
+            background-color: white;
+            padding: 15px;
+            width: 50%;
+            text-align: center;
+
+
+            /* box-shadow: 0px 0px 10px 0px rgb(39 165 165); */
+
+        }
+
+        .button-sedan button {
+            color: orange;
+        }
+        button:hover{
+            transform: perspective(300px) rotateY(360deg);
+
+        }
+        .button-suvs button {
+            color: cadetblue;
+        }
+
+        .button-luxury button {
+            color: seagreen;
+        }
+     
+            @media screen and (max-width:1198px) {
+           
+                .card-sedans, .card-suvs ,.card-luxury {
+                width: 100%;
+                flex-shrink: 0;
+            }
+        }
+            
+    
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card-sedans">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>SEDANS</h2>
+            <p>Choose a sedan for its </p>
+            <p>affordability and excellent fuel ecoomy.</p>
+            <p>Ideal for cruising in the city or on your
+                next road trip.</p>
+
+            <div class="button-sedan">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="card-suvs">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>SUVS</h2>
+            <p>Choose a sedan for its </p>
+            <p>affordability and excellent fuel ecoomy.</p>
+            <p>Ideal for cruising in the city or on your
+                next road trip.</p>
+
+            <div class="button-suvs">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="card-luxury">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>LUXURY</h2>
+            <p>Choose a sedan for its </p>
+            <p>affordability and excellent fuel ecoomy.</p>
+            <p>Ideal for cruising in the city or on your
+                next road trip.</p>
+
+            <div class="button-luxury">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid challenge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            align-items: center;
+            width: 100vw;
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: orange;
+            color: white;
+            width: 26%;
+            height: 85vh;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        .card-sedans {
+
+            background-color: orange;
+            border-top-left-radius: 4px;
+        }
+
+        .card-suvs {
+            background-color: cadetblue;
+            ;
+        }
+
+        .card-luxury {
+            background-color: seagreen;
+            border-top-right-radius: 4px;
+
+        }
+        img {
+            height: 50px;
+            margin-top:
+                40px;
+            margin-bottom: 20PX;
+        }
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+        .bt {
+            height: 30%;
+        }
+        p {
+            flex-shrink: 0;
+            flex-grow: 1;
+            /* font-size: 20px; */
+        }
+
+        button {
+            padding: 10px 80px;
+            border-radius: 4px;
+            border: 0;
+            margin-top: 90PX;
+
+            /* box-shadow: 0px 0px 10px 0px rgb(39 165 165); */
+
+        }
+
+        .button-sedan {
+            color: orange
+        }
+
+        button {
+            transform: perspective(300px) rotateY(0deg);
+            transition: all 3s linear;
+        }
+
+        button:hover {
+            transform: perspective(300px) rotateY(360deg);
+
+        }
+
+        .button-suvs {
+            color: cadetblue;
+        }
+
+        .button-luxury {
+            color: seagreen;
+        }
+
+        @media screen and (max-width:1198px) {
+
+            .card-sedans,
+            .card-suvs,
+            .card-luxury {
+                width: 100%;
+                flex-shrink: 0;
+            }
+        }
+
+        .card-sedans button {
+            color: orange;
+        }
+
+        .card-suvs button {
+            color: green;
+        }
+
+        .card-sedans .logo-wrapper img {
+            width: 60px;
+            transition: width 3s ease-in-out;
+        }
+
+        .card-sedans:hover .logo-wrapper img {
+            width: 120px;
+        }
+
+        .card-suvs:hover .logo-wrapper img {
+
+            transform: rotateX(180deg);
+            /* transform: skew(180deg); */
+        }
+
+        .card-luxury .logo-wrapper img {
+            transform: translateX(0);
+            transition: transform 3s ease-in-out;
+        }
+
+        .card-luxury:hover .logo-wrapper img {
+            transform: translateX(200px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="card-sedans card">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>SEDANS</h2>
+            <p>Choose a sedan for its <br />
+                affordability and excellent fuel ecoomy.<br />
+                Ideal for cruising in the city or on your
+                next road trip.</p>
+            <div>
+                <button>Learn More</button>
+            </div>
+
+        </div>
+
+        <div class="card-suvs card">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>SUVS</h2>
+
+            <p>Choose a sedan for its <br />
+                affordability and excellent fuel ecoomy.<br />
+                Ideal for cruising in the city or on your
+                next road trip.</p>
+
+            <button class="button-suvs">Learn More</button>
+        </div>
+
+        <div class="card-luxury card">
+            <div class="logo-wrapper">
+                <img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-15.jpg" alt="">
+            </div>
+            <h2>LUXURY</h2>
+            <p>Choose a sedan for its <br />
+                affordability and excellent fuel ecoomy.<br />
+                Ideal for cruising in the city or on your
+                next road trip.</p>
+
+
+            <button class="button-luxury">Learn More</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

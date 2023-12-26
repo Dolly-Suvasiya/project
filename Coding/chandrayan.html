@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrayaan-3</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 2, 100);
+}
+.tribut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    font-size: 18px;
+    background-color: bisque;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.title p{
+    font-family:monospace;
+    font-size: 40px;
+    margin: 0;
+}
+.tribut-img{
+    border-radius:30px ;
+    width: 90%;
+}
+.tribut-textandimg{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+.text-width{
+    width: 90%;
+    padding: 10px;
+}
+
+.tribut-textandimg-wrapper {
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+.tribut-textandimg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.tribut-textandimg .tribut-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1000px) rotateY(0deg);
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.tribut-textandimg:hover .tribut-img {
+    transform: perspective(1000px) rotateY(180deg);
+    opacity: 0;
+}
+.tribut-textandimg .tribut-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1000px) rotateY(-180deg);
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.tribut-textandimg:hover .tribut-img2 {
+    transform: perspective(1000px) rotateY(0deg);
+    opacity: 1;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="tribute.css"> -->
+</head>
+
+<body>
+    <div class="main">
+        <div class="tribut">
+            <div class="title">
+                <b>
+                    <p>A Tribute to</p>
+                    <p>ISROs Chandrayaan-3</p>
+                </b>
+            </div>
+
+            <div class="tribut-textandimg-wrapper">
+                <div class="tribut-textandimg">
+                    <img class="tribut-img" src="Chandrayaan-3.webp">
+                    <img class="tribut-img2" src="india.jpeg">
+                </div>
+
+                <p style="margin: 0; padding-top: 5px;">The Hoppes of Indian Space Industry is looking Bright! </p>
+            </div>
+            <div class="text-width tribut-intro">
+                <h2>
+                    Chandrayaan Tales: Exploring the Cosmic Journey..
+                </h2><br>
+                <p>Step into a realm of celestial exploration as we present Chandrayaan-3 a tribute that opens the
+                    doors to India's lunar aspirations.
+                </p>
+                <p>With a rich tapestry of history, visionary minds, and audacious missions, this journey will captivate
+                    you. Delve into our lunar odyssey through:
+                </p>
+                <ul>
+                    <li>The remarkable evolution of Chandrayaan projects.</li>
+                    <li>The luminaries behind our nation's cosmic triumphs.</li>
+                    <li>The audacious dreams that extend to the stars.</li>
+                </ul>
+                <p>Join us in celebrating a saga that intertwines victory, wonder, and the limitless cosmos.</p>
+            </div>
+            <div class="text-width tribut-history">
+                <h2>
+                    Unveiling Lunar Mysteries: The Epic Saga of Chandrayaan Missions
+                </h2><br>
+                <ul>
+                    <li><b>Chandrayaan-1:</b><br>
+                        In 2008, Chandrayaan-1 began our cosmic journey by
+                        discovering water on the Moon a proud moment for our country.
+                    </li>
+                    <li>
+                        <b>Chandrayaan-2:</b><br>
+                        In 2019, Chandrayaan-2 showed us what courage means.
+                        Vikram, the main character, faced difficulties but taught us to dare even when things are tough.
+                    </li>
+                    <li>
+                        <b>Chandrayaan-3:</b><br>
+                        Rising from Challenges, Fueled by Dreams
+                        Today (23-Aug-2023), Chandrayaan-3 rises like a phoenix from the ashes, representing our spirit
+                        strong and determined.
+                        It's a tribute to those who keep going, no matter what.
+                    </li>
+                </ul>
+            </div>
+            <div class="text-width tribut-people">
+                <h2>
+                    Masterminds of Success: ISRO's Brilliant Minds
+                </h2><br>
+                <ul>
+                    <li><b>Discovering New Places:</b> Venturing into uncharted lunar regions.</li>
+                    <li><b>Unlocking Lunar Secrets:</b>Figuring out the Moon's hidden geology.</li>
+                    <li><b>Hunting for Ice:</b> Searching for life-giving water in the Moon's shadows.</li>
+                    <li><b>Revealing the Past:</b> Telling the Moon's story through its craters and rocks.</li>
+                </ul>
+            </div>
+            <div class="text-width tribut-vision">
+                <h2>
+                    ISRO's Stellar Vision: Empowering India's Cosmic Journey
+                </h2><br>
+                <ul>
+                    <li>
+                        Chandrayaan-3 encapsulates India's audacious vision to conquer cosmic frontiers, to make our
+                        mark among the stars.
+                        And the excitement doesn't stop here.
+                    </li>
+                    <li>
+                        Upcoming projects like Gaganyaan and Aditya-L1 paint a future where we reach for the cosmos.
+                    </li>
+                    <li>
+                        ISRO's determination propels us into space, where we'll shine brightly.
+                    </li>
+                </ul>
+            </div>
+            <div class="text-width tribut-conclusion">
+                <h2>
+                    Conclusion
+                </h2><br>
+                <ul>
+                    <li>
+                        Chandrayaan-3 isn't just a mission; it's a melody of dreams, a song of bravery.
+                        Every victory is a note of happiness, every challenge a tune of strength.
+                    </li>
+                    <li>
+                        As we stand on the edge of Chandrayaan-3, we celebrate our past, live in the present, and reach
+                        for the future.
+                        This tribute is our way of saying that we'll never stop exploring, no matter where the universe
+                        takes us.
+                    </li>
+                    <li>
+                        With stars in our eyes and smiles on our faces, let's embark on this cosmic adventure, together.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

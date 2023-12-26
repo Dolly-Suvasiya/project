@@ -1,0 +1,39 @@
+// practice
+below are the class and properties provided
+create code based on provided code file
+expected result is to print all properties of the same class and extended properties
+
+// base class
+MobileBase
+-> displayCount -> 1
+-> maxSimcardCount -> 2
+-> hasCharger -> true
+
+// 1st level
+LowRange extends MobileBase
+-> cameraCount -> 3
+-> displayType -> LCD
+
+MidRange extends MobileBase
+-> cameraCount -> 4
+-> displayType -> LED
+
+HighRange extends MobileBase
+-> cameraCount -> 5
+-> displayType -> OLED
+
+// 2nd level
+SamsungM31 extends MidRange
+-> model -> Samsung M31
+-> company -> Samsung
+-> price -> 15,000
+
+SamsungS23 extends HighRange
+-> model -> Samsung S 23
+-> company -> Samsung
+-> price -> 45,000
+
+SamsungY extends LowRange
+-> model -> Samsung Young
+-> company -> Samsung
+-> price -> 8,000
